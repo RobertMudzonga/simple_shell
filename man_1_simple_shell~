@@ -1,0 +1,30 @@
+.TH hsh 1 "0ctober 29, 2021" "1.0" "hsh The Commands Manual"
+
+.SH NAME
+
+.B simple_shell -hsh
+- shell implementation of command interpreter
+
+.SH SYNOPSIS
+
+#include "shell.h"
+
+.PP
+.B command [ arguments ]
+.PP
+.B exit [ exit num]
+.PP
+.B ls -l
+.PP
+.B exit 78
+
+.SH DESCRIPTION
+simple_shell is a command line interpreter.This simple_shell has many features which are similar to the Thompson shell, but it is not a clone of it.
+.PP
+
+.B Overview
+The shell is a command that reads lines from a file,terminals and interprets them, and executes other commands
+.PP
+
+.B Invocation
+Simple_shell is complied with the GNU Compiler Collection, preferably with using 

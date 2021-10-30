@@ -1,0 +1,53 @@
+.TH hsh 1 "0ctober 29, 2021" "1.0" "hsh The Commands Manual"
+
+.SH NAME
+
+.B simple_shell -hsh
+- shell implementation of command interpreter
+
+.SH SYNOPSIS
+
+#include "shell.h"
+
+.PP
+.B command [ arguments ]
+.PP
+.B exit [ exit num]
+.PP
+.B ls -l
+.PP
+.B exit 78
+
+.SH DESCRIPTION
+simple_shell is a command line interpreter.This simple_shell has many features which are similar to the Thompson shell, but it is not a clone of it.
+.PP
+
+.B Overview
+The shell is a command that reads lines from a file,terminals and interprets them, and executes other commands
+.PP
+
+.B Invocation
+Simple_shell is complied with the GNU Compiler Collection, preferably with using "gcc" as shown in the example below
+.RS
+.B $ gcc -Wall -Wextra -pedantic *.c -0 hsh
+.P
+.RE
+simple_shell can be run in interactive mode and none interactive mode
+.P
+.RS
+.b echo 'pwd' | ./hsh
+.PP
+
+.B Command Exit Status
+
+Each command has an exit status that can influence the behaviour of other shell com-
+mands.  The paradigm is that a command exits with zero for normal or success, and non-
+zero for failure, error, or a false indication.
+
+.SH BUGS
+Please report any bugs and issues to the authors
+
+.SH AUTHORS
+
+Robert Mudzonga <rmudzonga64@gmail.com>
+Munashe Dante Kansepa <>
