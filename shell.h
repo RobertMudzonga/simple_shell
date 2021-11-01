@@ -43,4 +43,11 @@ char *check_path(char **parsed, paths_t *h);
 void call_func(char *, char **, char **, char **, paths_t *);
 char *str_concat(char *s1, char *s2);
 
+/**
+ * get_paths 
+*/
+char *find_path(char *filename, char *tmp, char *er)
+char *read_dir(char *er, struct dirent *s, char *fil, int l, char *fp, char *t)
+char *save_path(char *tmp, char *path)
+
 #endif
