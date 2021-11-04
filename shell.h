@@ -61,4 +61,11 @@ void cant_cd_to(char *str, int c_n, list_t *env);
 void illegal_number(char *str, int c_n, list_t *env);
 char *int_to_string(int num);
 
+/**
+ * get_paths 
+*/
+char *find_path(char *filename, char *tmp, char *er)
+char *read_dir(char *er, struct dirent *s, char *fil, int l, char *fp, char *t)
+char *save_path(char *tmp, char *path)
+
 #endif
