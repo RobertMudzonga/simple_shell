@@ -14,9 +14,8 @@ struct dirent *sd;
 char *file_path, *path, *ret;
 int len = 0;
 
-while (filename[len]){
+while (filename[len])
 len++;
-}
 path = _getenv("PATH");
 tmp = save_path(tmp, path);
 file_path = strtok(tmp, ":");
